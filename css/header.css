@@ -1,0 +1,36 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_nav{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.header_nav li a{
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 1000px){
+  .header{
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .header_nav{
+    justify-content: center;
+    padding: 20px 10px;
+  }
+
+  .header_nav li a{
+    border-radius: 5px;
+    background-color: #F5F5F5;
+  }
+}
